@@ -1,0 +1,21 @@
+[project]
+name = "cytofprep"
+version = "0.1.0"
+description = "CyTOF debarcoding toolkit implementing the Zunder-lab SCD algorithm"
+authors = [
+    {name = "haoqichen20", email = "haoqichen20@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+]
+
+[tool.poetry]
+packages = [{include = "cytofprep", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
